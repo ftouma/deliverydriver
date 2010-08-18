@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  package="org.billsnow.android.deliverydriver"
+  android:versionCode="1"
+  android:versionName="1.0">
+  <application 
+    android:icon="@drawable/launcher" 
+    android:label="Delivery Driver">
+    <provider
+      android:name=".CustomerProvider"
+      android:authorities="org.billsnow.customerprovider">
+    </provider>
+    <provider
+      android:name=".ShiftProvider"
+      android:authorities="org.billsnow.shiftprovider">
+    </provider>
+    <service
+      android:name=".DeliveryDriverService"
+      android:label="Delivery Driver"
+      android:icon="@drawable/status">
+    </service>
+    <activity
+      android:name=".DeliveryDriverTabs">
+    </activity>
+    <activity 
+      android:name=".ShiftListActivity">
+    </activity>
+    <activity
+      android:name=".CustomerListActivity">
+    </activity>
+    <activity
+      android:name=".SettingsActivity">
+    </activity>
+    <activity
+      android:name=".RunListActivity"
+      android:launchMode="singleTask">
+    </activity>
+    <activity
+      android:name=".CustomerEditActivity">
+    </activity>
+  </application>
+</manifest> 
