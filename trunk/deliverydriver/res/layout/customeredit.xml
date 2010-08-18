@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <TextView
+    android:id="@+id/cust_phonelabel"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:text="Customer Phone: ">
+  </TextView>
+  <EditText
+    android:id="@+id/cust_editphone"
+    android:inputType="phone"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:layout_below="@+id/cust_phonelabel">
+  </EditText>
+  <TextView
+    android:id="@+id/cust_addresslabel"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:layout_below="@+id/cust_editphone"
+    android:text="Customer Address: ">
+  </TextView>
+  <EditText
+    android:id="@+id/cust_editaddress"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:layout_below="@+id/cust_addresslabel">
+  </EditText>
+  <TextView
+    android:id="@+id/cust_commentslabel"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:layout_below="@+id/cust_editaddress"
+    android:text="Customer Comments: ">
+  </TextView>
+  <EditText
+    android:id="@+id/cust_editcomments"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:layout_below="@+id/cust_commentslabel">
+  </EditText>
+  <TextView
+    android:id="@+id/cust_nrunslabel"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_below="@+id/cust_editcomments"
+    android:text="# of Deliveries: ">
+  </TextView>
+  <TextView
+    android:id="@+id/cust_nruns"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_toRightOf="@+id/cust_nrunslabel">
+  </TextView>
+  <TextView
+    android:id="@+id/cust_tipavg"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/cust_editcomments">
+  </TextView>
+  <TextView
+    android:id="@+id/cust_tipavglabel"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_below="@+id/cust_editcomments"
+    android:layout_toLeftOf="@+id/cust_tipavg"
+    android:text="Tip Average: ">
+  </TextView>
+  <TextView
+    android:id="@+id/cust_timelastlabel"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_below="@+id/nrunslabel"
+    android:text="Last Delivery: ">
+  </TextView>
+  <TextView
+    android:id="@+id/cust_edittimelast"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_below="@+id/cust_nrunslabel"
+    android:layout_toRightOf="@+id/cust_timelastlabel">
+  </TextView>
+  <Button
+    android:id="@+id/cust_save"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:text="Save Changes">
+  </Button>
+  <Button
+    android:id="@+id/cust_load"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_toRightOf="@+id/cust_save"
+    android:layout_alignParentBottom="true"
+    android:text="Revert Changes">
+  </Button>
+</RelativeLayout>

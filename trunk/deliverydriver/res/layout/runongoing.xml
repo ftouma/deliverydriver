@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+  <TextView
+    android:id="@+id/runongoingphone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true">
+  </TextView>
+  <TextView
+    android:id="@+id/runavgtip"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true">    
+  </TextView>
+  <TextView
+    android:id="@+id/runavgtiplabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_toLeftOf="@+id/runavgtip"
+    android:text="Avg. Tip: ">
+  </TextView>
+  <TextView
+    android:id="@+id/runongoingaddress"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/runongoingphone"
+    android:layout_alignParentLeft="true">
+  </TextView>
+  <TextView
+    android:id="@+id/runcomments"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/runavgtip"
+    android:layout_alignParentRight="true">
+  </TextView>
+</RelativeLayout>

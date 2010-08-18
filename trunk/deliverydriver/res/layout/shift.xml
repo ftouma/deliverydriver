@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+  <TextView
+    android:id="@+id/time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true">
+  </TextView>
+  <TextView
+    android:id="@+id/hrsworked"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true">
+  </TextView>
+  <TextView
+    android:id="@+id/hrsworkedlabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_toLeftOf="@+id/hrsworked"
+    android:text="Hrs. Worked: ">
+  </TextView>
+  <TextView
+    android:id="@+id/takehomelabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/time"
+    android:layout_alignParentLeft="true"
+    android:text="Take Home: ">
+  </TextView>
+  <TextView
+    android:id="@+id/takehome"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/time"
+    android:layout_toRightOf="@+id/takehomelabel">
+  </TextView>
+  <TextView
+    android:id="@+id/shiftruns"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/hrsworked"
+    android:layout_alignParentRight="true">
+  </TextView>
+  <TextView
+    android:id="@+id/shiftrunslabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/hrsworked"
+    android:layout_toLeftOf="@+id/shiftruns"
+    android:text="Runs: ">
+  </TextView>
+  <TextView
+    android:id="@+id/wageslabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/takehomelabel"
+    android:layout_alignParentLeft="true"
+    android:text="Wage: ">
+  </TextView>
+  <TextView
+    android:id="@+id/wages"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/takehomelabel"
+    android:layout_toRightOf="@+id/wageslabel">
+  </TextView>
+  <TextView
+    android:id="@+id/milage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/shiftruns"
+    android:layout_alignParentRight="true">
+  </TextView>
+  <TextView
+    android:id="@+id/milagelabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/shiftruns"
+    android:layout_toLeftOf="@+id/milage"
+    android:text="Milage: ">
+  </TextView>
+</RelativeLayout>
